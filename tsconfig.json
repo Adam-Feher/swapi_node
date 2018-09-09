@@ -15,6 +15,7 @@
     "noImplicitThis": true
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*",
+    "./spec/**/*"
   ]
 }

@@ -1,4 +1,4 @@
-import {Request, Response } from 'express';
+import { Response } from 'express';
 import {
     controller,
     httpGet,
@@ -9,7 +9,7 @@ import {inject} from "inversify";
 import {SwapiService} from "../services/swapi.service";
 
 @controller('/swapi')
-export class RandomController implements interfaces.Controller {
+export class SwapiController implements interfaces.Controller {
 
     constructor(@inject('SwapiService') private swapiService: SwapiService) { }
 
